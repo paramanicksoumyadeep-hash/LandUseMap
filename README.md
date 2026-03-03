@@ -66,8 +66,8 @@ This project focuses on classifying satellite images using deep learning techniq
 ---
 
 ## Future Work
-- Extend the model to handle multi-class land-cover classification.  
-- Optimize preprocessing and augmentation for larger satellite datasets.  
-- Explore deployment of trained models for real-time environmental monitoring.  
+- Create an working website using streamlit to use the features of scripts.
+- Optimize preprocessing for larger satellite datasets.  
+- Add features to find avalable plots for development and add environmental impact on Urbanizing Vegetation areas. 
 
 ---
