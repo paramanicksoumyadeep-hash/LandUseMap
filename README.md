@@ -6,6 +6,7 @@ I acknowledge that I have taken the help of the AI tool **ChatGPT** to implement
 
 ## Overview
 This project focuses on classifying satellite images using deep learning techniques,trained on **ResNet18** model. 
+Kagggle Dataset Link:-https://www.kaggle.com/datasets/rishabhsnip/earth-observation-delhi-airshed
 
 ---
 
@@ -52,10 +53,12 @@ This project focuses on classifying satellite images using deep learning techniq
 
 ## How to Run
 1. Clone this repository.  
-2. Install the required libraries listed above using `pip install`.  
-3. Prepare the dataset (satellite imagery) in the designated folder.  
-4. Run the main script to preprocess images, assign labels, and train the ResNet18 model.  
-5. Evaluate the model using accuracy and F1 score metrics.  
+2. Install the required libraries listed above using `pip install`.
+3. Prepare the dataset (satellite imagery) in the designated folder.Name the folder data and add
+   rgb folder, delhi_ncr_region.geojson, delhi_airshed.geojson, worldcover_bbox_delhi_ncr_2021.tif.in it
+4.Run the script createimagecordinates.py
+5. Run the main script to preprocess images, assign labels, and train the ResNet18 model.  
+6. Evaluate the model using accuracy and F1 score metrics.  
 
 ---
 
