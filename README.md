@@ -1,15 +1,21 @@
-# Land-Cover Classification and ResNet18-Based Image Analysis
+# Delhi LandUse Analysis 
+## Acknowledgements
+I acknowledge that I have taken the help of the AI tool **ChatGPT** to implement some tasks, such as assigning image labels using the dominant (mode) land-cover class, filtering satellite images, and implementing the ResNet18 model. However, I have a **conceptual understanding** of how the code works and the purpose of the libraries, methods, and functions used.  
+
+---
 
 ## Overview
-This project focuses on classifying satellite images using deep learning techniques, specifically the **ResNet18** model. The main goal is to assign image labels based on the **dominant (mode) land-cover class** and explore AI applications for environmental and societal problem-solving.  
-
-The project demonstrates the use of geospatial data processing, image analysis, and deep learning to achieve high-accuracy land-cover classification.
+This project focuses on classifying satellite images using deep learning techniques,trained on **ResNet18** model. 
 
 ---
 
 ## Features
-- Assign labels to satellite images using the dominant (mode) land-cover class.  
-- Filter and preprocess satellite imagery for analysis.  
+- 1)Plots the Delhi-NCR shapefile using matplotlib and filters sattelite images that fall under delhi region
+    uses geopandas spatia; filters to filter the sattelite imagery area that is under delhi ncr map.
+- 2)createimagecoordinates.py creates cororditanes for each image from the rbp image data directory.This is useful to map
+    the images with their latitutde and longitude
+  3)For each image co-ordinate, created a land-cover patch from land_cover.tif using it's co-ordinate.Using Rasterio to fetch the .tif file
+  4)every patch is assigned a label with dominant (mode) land-cover class and assigned a land use category.
 - Implement a **ResNet18** convolutional neural network for image classification.  
 - Evaluate model performance using **accuracy** and **F1 score** metrics.  
 
@@ -40,10 +46,7 @@ The project demonstrates the use of geospatial data processing, image analysis, 
 
 ---
 
-## Acknowledgements
-I acknowledge that I have taken the help of the AI tool **ChatGPT** to implement some tasks, such as assigning image labels using the dominant (mode) land-cover class, filtering satellite images, and implementing the ResNet18 model. However, I have a **conceptual understanding** of how the code works and the purpose of the libraries, methods, and functions used.  
 
----
 
 ## How to Run
 1. Clone this repository.  
