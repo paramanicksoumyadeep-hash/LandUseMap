@@ -14,11 +14,12 @@ This project focuses on classifying satellite images using deep learning techniq
     uses geopandas spatia; filters to filter the sattelite imagery area that is under delhi ncr map.
 - 2)createimagecoordinates.py creates cororditanes for each image from the rbp image data directory.This is useful to map
     the images with their latitutde and longitude
-  3)For each image co-ordinate, created a land-cover patch from land_cover.tif using it's co-ordinate.Using Rasterio to fetch the .tif file
-  4)every patch is assigned a label with dominant (mode) land-cover class and assigned a land use category.
-- Implement a **ResNet18** convolutional neural network for image classification.  
-- Evaluate model performance using **accuracy** and **F1 score** metrics.  
-
+- 3)For each image co-ordinate, created a land-cover patch from land_cover.tif using it's co-ordinate.Using Rasterio to fetch the .tif file
+- 4)every patch is assigned a label with dominant (mode) land-cover class and assigned a land use category.
+- 5)Implement a **ResNet18** convolutional neural network for image classification.with 60/40 train-test split percentage.
+    The model was trained for 10 epochs.
+- 6)Evaluate model performance using **accuracy** and **F1 score** metrics.  
+  7)Plot Confusion Matrix to find where it fails mostly
 ---
 
 ## Results
@@ -29,6 +30,7 @@ This project focuses on classifying satellite images using deep learning techniq
 
 ---
 
+## Libraries Used
 ## Libraries Used
 - geopandas  
 - matplotlib  
