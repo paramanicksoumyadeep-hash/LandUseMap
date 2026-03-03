@@ -62,8 +62,7 @@ df["landuse"] = df["esa_class"].map(esa_to_landuse)
 #drop null values
 df = df.dropna(subset=["landuse"])
 #                  2.4)Perform a 60/40 train-test split randomly and visualize class distribution
-df = df.sample(n=800, random_state=42).reset_index(drop=True)
-print("Using samples:", len(df))
+
 train_df, test_df = train_test_split(
     df, test_size=0.4, random_state=42, shuffle=True
 )
